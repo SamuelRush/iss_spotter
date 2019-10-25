@@ -6,9 +6,9 @@ nextISSTimesForMyLocation((error,passTimes) => {
   }
   // success, print out the deets!
   //console.log(passTimes);
-  for (let x of passTimes){
+  for (let x of passTimes) {
     const datetime = new Date(0);
     datetime.setUTCSeconds(x.risetime);
-    console.log(`Next pass at ${datetime} for ${x.duration} seconds!`)
+    console.log(`Next pass at ${datetime} for ${x.duration} seconds!`);
   }
-})
+});
